@@ -1,0 +1,254 @@
+/root/anaconda2/lib/python2.7/site-packages/torndb.py:240: Warning: Table 'log2016_11_11' already exists
+  return cursor.execute(query, kwparameters or parameters)
+[I 161111 23:08:57 web:1811] 200 GET / (111.205.110.130) 3.99ms
+[I 161111 23:08:58 web:1811] 200 GET /static/css/bootstrap-switch.min.css (111.205.110.130) 0.87ms
+[I 161111 23:08:58 web:1811] 200 GET /static/css/font-awesome.min.css (111.205.110.130) 743.46ms
+[I 161111 23:09:20 web:1811] 200 GET /static/js/bootstrap.min.js (111.205.110.130) 1465.19ms
+[I 161111 23:09:20 web:1811] 200 GET /static/css/jquery-ui.min.css (111.205.110.130) 21650.19ms
+[I 161111 23:09:20 web:1811] 200 GET /static/js/bootstrap-switch.min.js (111.205.110.130) 1.16ms
+[I 161111 23:09:20 web:1811] 200 GET /static/js/index.js (111.205.110.130) 0.83ms
+[I 161111 23:09:20 web:1811] 200 GET /static/js/jquery.json.min.js (111.205.110.130) 0.79ms
+[I 161111 23:09:20 web:1811] 200 GET /static/js/jquery.cookie.js (111.205.110.130) 0.80ms
+[I 161111 23:09:23 web:1811] 200 GET /static/cnm4.jpg (111.205.110.130) 2848.11ms
+[I 161111 23:09:23 web:1811] 200 GET /static/title1.jpg (111.205.110.130) 0.79ms
+[I 161111 23:09:24 web:1811] 200 GET /static/js/jquery-ui.min.js (111.205.110.130) 25300.87ms
+[I 161111 23:09:41 web:1811] 200 GET /static/js/jquery.min.js (111.205.110.130) 42297.60ms
+[I 161111 23:12:33 web:1811] 304 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (117.136.0.171) 11.08ms
+[I 161111 23:12:33 web:1811] 304 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=2 (117.136.0.171) 2.28ms
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 35, in getBaiduRelateDict
+    mingtemp=getRemoteClientHeader(baiduUrl,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 149, in gets360RelateDict
+    result=getRemoteClientHeader_2(url,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 18, in getRemoteClientHeader_2
+    result= s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 192, in getSogouRelateDict
+    result=getRemoteClientHeader(url,headers)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+
+[I 161111 23:12:51 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=7&pn=1 (117.136.0.171) 17.20ms
+[I 161111 23:12:51 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=7 (117.136.0.171) 2.40ms
+[I 161111 23:12:51 web:1811] 200 GET /queryQita?q=+%E6%98%8E+&xgss=true&pn=1&url_type=queryQita&q_type=2 (117.136.0.171) 3.31ms
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 61, in so360Recommend
+    result = result.encode('ISO-8859-1').decode('utf-8')
+UnicodeEncodeError: 'latin-1' codec can't encode character u'\u660e' in position 396: ordinal not in range(256)
+
+[I 161111 23:13:11 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=8&pn=1 (117.136.0.171) 8924.79ms
+[I 161111 23:13:11 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=8 (117.136.0.171) 2.49ms
+[I 161111 23:13:11 web:1811] 200 GET /queryQita?q=+%E6%98%8E+&xgss=true&pn=1&url_type=queryQita&q_type=3 (117.136.0.171) 3.33ms
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 61, in so360Recommend
+    result = result.encode('ISO-8859-1').decode('utf-8')
+UnicodeEncodeError: 'latin-1' codec can't encode character u'\u660e' in position 396: ordinal not in range(256)
+
+[I 161111 23:13:25 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=8&pn=1 (101.226.65.107) 4336.34ms
+[E 161111 23:13:25 web:1407] Uncaught exception GET /static/css/bootstrap.min.css (111.205.110.130)
+    HTTPServerRequest(protocol='http', host='123.125.45.242:9999', method='GET', uri='/static/css/bootstrap.min.css', version='HTTP/1.1', remote_ip='111.205.110.130', headers={'Connection': 'keep-alive', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Referer': 'http://123.125.45.242:9999/', 'Host': '123.125.45.242:9999', 'Accept': 'text/css,*/*;q=0.1', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/web.py", line 1334, in _execute
+        result = yield result
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/gen.py", line 617, in run
+        value = future.result()
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/concurrent.py", line 109, in result
+        raise_exc_info(self._exc_info)
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/gen.py", line 620, in run
+        yielded = self.gen.throw(*sys.exc_info())
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/web.py", line 2172, in get
+        yield self.flush()
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/gen.py", line 617, in run
+        value = future.result()
+      File "/root/anaconda2/lib/python2.7/site-packages/tornado-4.0-py2.7-linux-x86_64.egg/tornado/concurrent.py", line 111, in result
+        raise self._exception
+    StreamClosedError
+[E 161111 23:13:25 web:916] Cannot send error response after headers written
+[I 161111 23:13:25 web:1811] 200 GET /static/css/bootstrap.min.css (111.205.110.130) 267125.81ms
+[I 161111 23:13:25 web:1811] 200 GET /static/js/jquery.min.js (101.226.65.107) 50.98ms
+[I 161111 23:13:26 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.65.107) 1.52ms
+[I 161111 23:13:26 web:1811] 200 GET /static/js/query.js (101.226.65.107) 0.81ms
+[I 161111 23:13:26 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.65.107) 70.65ms
+[I 161111 23:13:26 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.65.107) 0.77ms
+[I 161111 23:13:26 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.65.107) 0.80ms
+[I 161111 23:13:26 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=8 (101.226.65.107) 2.55ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/jquery.min.js (101.226.65.107) 50.94ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.65.107) 1.42ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.65.107) 114.01ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.65.107) 0.76ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.65.107) 0.77ms
+[I 161111 23:13:27 web:1811] 200 GET /static/js/header.js (101.226.65.107) 0.75ms
+[I 161111 23:26:33 web:1811] 304 GET / (117.136.0.171) 1.68ms
+[I 161111 23:26:45 web:1811] 200 GET /suggest?term=%E5%93%A6 (117.136.0.171) 6745.60ms
+[I 161111 23:26:45 web:1811] 200 GET /queryAll?q=%E5%93%A6&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (117.136.0.171) 8.72ms
+[I 161111 23:26:45 web:1811] 200 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=2 (117.136.0.171) 2.45ms
+[I 161111 23:26:55 web:1811] 200 GET /queryAll?q=%E5%93%A6&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (101.226.33.238) 8.77ms
+[I 161111 23:26:55 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.238) 61.95ms
+[I 161111 23:26:55 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.238) 1.54ms
+[I 161111 23:26:56 web:1811] 200 GET /static/js/query.js (101.226.33.238) 0.81ms
+[I 161111 23:26:56 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.238) 92.94ms
+[I 161111 23:26:56 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.238) 0.79ms
+[I 161111 23:26:56 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.238) 0.82ms
+[I 161111 23:26:56 web:1811] 200 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=2 (101.226.33.238) 2.41ms
+[I 161111 23:26:56 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.238) 92.38ms
+[I 161111 23:26:57 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.238) 1.43ms
+[I 161111 23:26:57 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.238) 129.92ms
+[I 161111 23:26:57 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.238) 0.79ms
+[I 161111 23:26:57 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.238) 0.80ms
+[I 161111 23:26:57 web:1811] 200 GET /static/js/header.js (101.226.33.238) 0.78ms
+[I 161111 23:31:38 web:1811] 200 GET /queryAll?q=%E5%93%A6&baidu=true&s360=true&sogou=true&content_type=1&pn=1 (117.136.0.171) 9.21ms
+[I 161111 23:31:38 web:1811] 200 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=1 (117.136.0.171) 2.42ms
+[I 161111 23:31:48 web:1811] 200 GET /queryAll?q=%E5%93%A6&baidu=true&s360=true&sogou=true&content_type=1&pn=1 (180.153.205.254) 8.65ms
+[I 161111 23:31:48 web:1811] 200 GET /static/js/jquery.min.js (180.153.205.254) 66.22ms
+[I 161111 23:31:48 web:1811] 200 GET /static/js/bootstrap.min.js (180.153.205.254) 1.00ms
+[I 161111 23:31:49 web:1811] 200 GET /static/js/query.js (180.153.205.254) 0.82ms
+[I 161111 23:31:49 web:1811] 200 GET /static/js/jquery-ui.min.js (180.153.205.254) 200.46ms
+[I 161111 23:31:49 web:1811] 200 GET /static/js/jquery.json.min.js (180.153.205.254) 0.77ms
+[I 161111 23:31:49 web:1811] 200 GET /static/js/jquery.cookie.js (180.153.205.254) 0.80ms
+[I 161111 23:31:49 web:1811] 200 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=1 (180.153.205.254) 2.45ms
+[I 161111 23:31:49 web:1811] 200 GET /static/js/jquery.min.js (180.153.205.254) 98.91ms
+[I 161111 23:31:50 web:1811] 200 GET /static/js/bootstrap.min.js (180.153.205.254) 1.39ms
+[I 161111 23:31:50 web:1811] 200 GET /static/js/jquery-ui.min.js (180.153.205.254) 138.31ms
+[I 161111 23:31:50 web:1811] 200 GET /static/js/jquery.json.min.js (180.153.205.254) 0.76ms
+[I 161111 23:31:50 web:1811] 200 GET /static/js/jquery.cookie.js (180.153.205.254) 0.82ms
+[I 161111 23:31:50 web:1811] 200 GET /static/js/header.js (180.153.205.254) 0.78ms
+[I 161111 23:56:13 web:1811] 304 GET / (10.128.113.101) 1.65ms
+[I 161112 00:05:02 web:1811] 304 GET / (111.205.110.130) 1.62ms
+[I 161112 00:05:02 web:1811] 206 GET /static/css/bootstrap.min.css (111.205.110.130) 3.49ms
+[I 161112 00:05:21 web:1811] 206 GET /static/css/bootstrap.min.css (111.205.110.130) 18241.66ms
+[W 161112 00:05:22 web:1811] 404 GET /favicon.ico (111.205.110.130) 1.63ms
+[I 161112 00:05:24 web:1811] 304 GET / (111.205.110.130) 1.50ms
+[I 161112 00:09:19 web:1811] 200 GET /suggest?term=+ (111.205.110.130) 0.59ms
+[I 161112 00:09:24 web:1811] 200 GET /suggest?term=xi (111.205.110.130) 3678.03ms
+[I 161112 00:09:34 web:1811] 200 GET /queryAll?q=xi&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (111.205.110.130) 10.13ms
+[I 161112 00:09:34 web:1811] 200 GET /static/js/query.js (111.205.110.130) 0.85ms
+[I 161112 00:09:35 web:1811] 200 GET /queryHeader?q=+xi&pn=1&content_type=2 (111.205.110.130) 2.37ms
+[I 161112 00:09:35 web:1811] 200 GET /static/js/header.js (111.205.110.130) 0.76ms
+[I 161112 00:09:47 web:1811] 200 GET /static/title.jpg (111.205.110.130) 11327.25ms
+[W 161112 00:29:37 web:1811] 404 GET /favicon.ico (117.136.0.171) 1.83ms
+[I 161112 00:29:39 web:1811] 304 GET /queryAll?q=%E5%93%A6&baidu=true&s360=true&sogou=true&content_type=1&pn=1 (117.136.0.171) 10.26ms
+[I 161112 00:29:39 web:1811] 304 GET /static/css/font-awesome.min.css (117.136.0.171) 0.77ms
+[I 161112 00:29:39 web:1811] 304 GET /static/css/bootstrap.min.css (117.136.0.171) 0.94ms
+[I 161112 00:29:39 web:1811] 304 GET /static/css/jquery-ui.min.css (117.136.0.171) 0.71ms
+[I 161112 00:29:39 web:1811] 304 GET /static/js/jquery.min.js (117.136.0.171) 0.84ms
+[I 161112 00:29:39 web:1811] 304 GET /static/js/bootstrap.min.js (117.136.0.171) 0.73ms
+[I 161112 00:29:39 web:1811] 304 GET /static/js/query.js (117.136.0.171) 0.65ms
+[I 161112 00:29:39 web:1811] 304 GET /static/js/jquery-ui.min.js (117.136.0.171) 1.23ms
+[I 161112 00:29:39 web:1811] 304 GET /static/js/jquery.json.min.js (117.136.0.171) 0.64ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/jquery.cookie.js (117.136.0.171) 0.64ms
+[I 161112 00:29:40 web:1811] 304 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=1 (117.136.0.171) 2.27ms
+[I 161112 00:29:40 web:1811] 304 GET /static/css/font-awesome.min.css (117.136.0.171) 0.71ms
+[I 161112 00:29:40 web:1811] 304 GET /static/css/bootstrap.min.css (117.136.0.171) 0.93ms
+[I 161112 00:29:40 web:1811] 304 GET /static/css/jquery-ui.min.css (117.136.0.171) 0.70ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/jquery.min.js (117.136.0.171) 0.83ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/bootstrap.min.js (117.136.0.171) 0.73ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/jquery-ui.min.js (117.136.0.171) 1.19ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/jquery.json.min.js (117.136.0.171) 0.63ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/jquery.cookie.js (117.136.0.171) 0.64ms
+[I 161112 00:29:40 web:1811] 304 GET /static/js/header.js (117.136.0.171) 0.63ms
+[I 161112 00:29:40 web:1811] 304 GET /static/title.jpg (117.136.0.171) 0.69ms
+[I 161112 00:29:48 web:1811] 200 GET /queryAll?q=%E5%93%A6&china_so=true&bing=true&shen_ma=true&content_type=1&pn=1 (117.136.0.171) 8.37ms
+[I 161112 00:29:49 web:1811] 304 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=1 (117.136.0.171) 2.29ms
+[I 161112 00:29:49 web:1811] 200 GET /queryNews?bing=true (117.136.0.171) 4.02ms
+[I 161112 00:29:49 web:1811] 200 GET /static/bing.png (117.136.0.171) 1.47ms
+[I 161112 00:29:58 web:1811] 200 GET /queryAll?q=%E5%93%A6&china_so=true&bing=true&shen_ma=true&content_type=1&pn=1 (117.185.27.113) 8.10ms
+[I 161112 00:29:58 web:1811] 200 GET /static/js/jquery.min.js (117.185.27.113) 51.85ms
+[I 161112 00:29:58 web:1811] 200 GET /static/js/bootstrap.min.js (117.185.27.113) 1.20ms
+[I 161112 00:29:59 web:1811] 200 GET /static/js/query.js (117.185.27.113) 0.81ms
+[I 161112 00:29:59 web:1811] 200 GET /static/js/jquery-ui.min.js (117.185.27.113) 105.81ms
+[I 161112 00:29:59 web:1811] 200 GET /static/js/jquery.json.min.js (117.185.27.113) 0.76ms
+[I 161112 00:29:59 web:1811] 200 GET /static/js/jquery.cookie.js (117.185.27.113) 0.79ms
+[I 161112 00:29:59 web:1811] 200 GET /queryHeader?q=+%E5%93%A6&pn=1&content_type=1 (117.185.27.113) 2.44ms
+[I 161112 00:29:59 web:1811] 200 GET /static/js/jquery.min.js (117.185.27.113) 51.92ms
+[I 161112 00:30:00 web:1811] 200 GET /static/js/bootstrap.min.js (117.185.27.113) 0.97ms
+[I 161112 00:30:00 web:1811] 200 GET /static/js/jquery-ui.min.js (117.185.27.113) 172.24ms
+[I 161112 00:30:00 web:1811] 200 GET /static/js/jquery.json.min.js (117.185.27.113) 0.77ms
+[I 161112 00:30:00 web:1811] 200 GET /static/js/jquery.cookie.js (117.185.27.113) 0.77ms
+[I 161112 00:30:00 web:1811] 200 GET /static/js/header.js (117.185.27.113) 0.78ms
+[I 161112 00:30:08 web:1811] 304 GET / (117.136.0.171) 1.44ms
+[I 161112 00:30:20 web:1811] 200 GET /suggest?term=%E5%AF%86%E7%A0%81 (117.136.0.171) 6110.06ms
+[I 161112 00:30:20 web:1811] 200 GET /queryAll?q=%E5%AF%86%E7%A0%81&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (117.136.0.171) 8.67ms
+[I 161112 00:30:20 web:1811] 200 GET /queryHeader?q=+%E5%AF%86%E7%A0%81&pn=1&content_type=2 (117.136.0.171) 2.42ms
+[I 161112 00:30:29 web:1811] 200 GET /queryAll?q=%E5%AF%86%E7%A0%81&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (101.226.33.203) 8.48ms
+[I 161112 00:30:29 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.203) 58.87ms
+[I 161112 00:30:29 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.203) 1.51ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/query.js (101.226.33.203) 0.79ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.203) 123.50ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.203) 0.78ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.203) 0.80ms
+[I 161112 00:30:30 web:1811] 200 GET /queryHeader?q=+%E5%AF%86%E7%A0%81&pn=1&content_type=2 (101.226.33.203) 2.42ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.203) 88.26ms
+[I 161112 00:30:30 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.203) 1.32ms
+[I 161112 00:30:31 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.203) 101.81ms
+[I 161112 00:30:31 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.203) 0.78ms
+[I 161112 00:30:31 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.203) 0.78ms
+[I 161112 00:30:31 web:1811] 200 GET /static/js/header.js (101.226.33.203) 0.77ms

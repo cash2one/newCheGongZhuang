@@ -1,0 +1,749 @@
+/root/anaconda2/lib/python2.7/site-packages/torndb.py:240: Warning: Table 'log2016_11_12' already exists
+  return cursor.execute(query, kwparameters or parameters)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 35, in baiduRecommend
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 113, in sogouRecommend
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 60, in so360Recommend
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+[I 161112 01:09:02 web:1811] 200 GET /queryAll?q=ming&baidu=true&s360=true&sogou=true&content_type=8&pn=1 (10.128.113.101) 116695.77ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/font-awesome.min.css (10.128.113.101) 4.35ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/bootstrap.min.css (10.128.113.101) 1.21ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/jquery-ui.min.css (10.128.113.101) 1.30ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.min.js (10.128.113.101) 0.89ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/bootstrap.min.js (10.128.113.101) 0.81ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/query.js (10.128.113.101) 0.70ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.cookie.js (10.128.113.101) 0.63ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery-ui.min.js (10.128.113.101) 1.26ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.json.min.js (10.128.113.101) 0.60ms
+[I 161112 01:09:02 web:1811] 200 GET /queryHeader?q=+ming&pn=1&content_type=8 (10.128.113.101) 2.62ms
+[I 161112 01:09:02 web:1811] 200 GET /queryQita?q=+ming+&xgss=true&pn=1&url_type=queryQita&q_type=3 (10.128.113.101) 3.47ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/font-awesome.min.css (10.128.113.101) 0.81ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/bootstrap.min.css (10.128.113.101) 0.93ms
+[I 161112 01:09:02 web:1811] 304 GET /static/css/jquery-ui.min.css (10.128.113.101) 0.78ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.min.js (10.128.113.101) 1.00ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery-ui.min.js (10.128.113.101) 1.19ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/bootstrap.min.js (10.128.113.101) 0.79ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.json.min.js (10.128.113.101) 0.62ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/jquery.cookie.js (10.128.113.101) 0.64ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/header.js (10.128.113.101) 0.63ms
+[I 161112 01:09:02 web:1811] 304 GET /static/title.jpg (10.128.113.101) 0.66ms
+[I 161112 01:09:02 web:1811] 304 GET /static/js/query.js (10.128.113.101) 0.61ms
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/sugesstion.py", line 22, in baiduSuggestion
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/sugesstion.py", line 49, in sogouSuggestion
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/sugesstion.py", line 128, in so360Suggest
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/sugesstion.py", line 151, in chinasoSuggest
+    result=getRemoteClient(url)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 22, in getRemoteClient
+    result= s.remoteRequest(url)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: "<type 'exceptions.TypeError'>:cannot marshal None unless allow_none is enabled">
+
+[I 161112 01:23:55 web:1811] 200 GET /queryAll?q=ming&baidu=true&s360=true&sogou=true&content_type=6&pn=1 (10.128.113.101) 200195.70ms
+[I 161112 06:17:35 web:1811] 200 GET /queryAll?baidu=true&content_type=1&pn=1&q=%E5%93%A6&s360=true&sogou=true (123.125.71.106) 10.36ms
+[W 161112 09:04:26 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (172.82.166.210) 1.36ms
+[W 161112 11:21:44 web:1811] 404 GET http://www.izhongsai.com/ (123.57.77.31) 0.79ms
+[W 161112 14:02:54 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (94.102.49.174) 0.64ms
+[W 161112 14:38:08 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (80.82.78.38) 0.65ms
+[I 161113 02:24:09 web:1811] 200 GET / (111.207.250.16) 1.93ms
+[I 161113 02:24:15 web:1811] 304 GET /static/css/font-awesome.min.css (111.207.250.16) 0.87ms
+[I 161113 02:24:16 web:1811] 304 GET /static/css/bootstrap.min.css (111.207.250.16) 0.99ms
+[I 161113 02:24:16 web:1811] 304 GET /static/css/jquery-ui.min.css (111.207.250.16) 0.74ms
+[I 161113 02:24:16 web:1811] 304 GET /static/css/bootstrap-switch.min.css (111.207.250.16) 0.84ms
+[I 161113 02:24:16 web:1811] 304 GET /static/js/jquery.min.js (111.207.250.16) 1.05ms
+[I 161113 02:24:16 web:1811] 304 GET /static/js/bootstrap.min.js (111.207.250.16) 0.75ms
+[I 161113 02:24:17 web:1811] 304 GET /static/js/bootstrap-switch.min.js (111.207.250.16) 0.74ms
+[I 161113 02:24:17 web:1811] 304 GET /static/js/index.js (111.207.250.16) 0.64ms
+[I 161113 02:24:17 web:1811] 304 GET /static/js/jquery.json.min.js (111.207.250.16) 0.66ms
+[I 161113 02:24:17 web:1811] 304 GET /static/js/jquery-ui.min.js (111.207.250.16) 1.25ms
+[I 161113 02:24:17 web:1811] 304 GET /static/js/jquery.cookie.js (111.207.250.16) 0.64ms
+[I 161113 02:24:17 web:1811] 304 GET /static/cnm4.jpg (111.207.250.16) 0.73ms
+[I 161113 02:24:19 web:1811] 304 GET /static/title1.jpg (111.207.250.16) 0.71ms
+[I 161113 02:25:49 web:1811] 304 GET / (111.207.250.16) 1.64ms
+[W 161113 02:25:50 web:1811] 404 GET /favicon.ico (111.207.250.16) 1.65ms
+[I 161113 02:25:58 web:1811] 200 GET /suggest?term=%E6%98%8E (111.207.250.16) 4732.04ms
+[I 161113 02:25:58 web:1811] 304 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (111.207.250.16) 11.46ms
+[I 161113 02:25:58 web:1811] 304 GET /static/js/query.js (111.207.250.16) 0.72ms
+[I 161113 02:25:58 web:1811] 304 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=2 (111.207.250.16) 2.31ms
+[I 161113 02:25:59 web:1811] 304 GET /static/js/header.js (111.207.250.16) 0.65ms
+[I 161113 02:25:59 web:1811] 304 GET /static/title.jpg (111.207.250.16) 0.67ms
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 35, in getBaiduRelateDict
+    mingtemp=getRemoteClientHeader(baiduUrl,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 149, in gets360RelateDict
+    result=getRemoteClientHeader_2(url,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 18, in getRemoteClientHeader_2
+    result= s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 192, in getSogouRelateDict
+    result=getRemoteClientHeader(url,headers)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+[I 161113 02:26:02 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=7&pn=1 (111.207.250.16) 17.09ms
+[I 161113 02:26:02 web:1811] 304 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=7 (111.207.250.16) 2.28ms
+[I 161113 02:26:02 web:1811] 304 GET /queryQita?q=+%E6%98%8E+&xgss=true&pn=1&url_type=queryQita&q_type=2 (111.207.250.16) 3.53ms
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 61, in so360Recommend
+    result = result.encode('ISO-8859-1').decode('utf-8')
+UnicodeEncodeError: 'latin-1' codec can't encode character u'\u660e' in position 396: ordinal not in range(256)
+
+[I 161113 02:26:13 web:1811] 304 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=8&pn=1 (111.207.250.16) 7735.67ms
+[I 161113 02:26:13 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (101.226.33.206) 8.10ms
+Exception in thread Thread-20:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 35, in getBaiduRelateDict
+    mingtemp=getRemoteClientHeader(baiduUrl,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-21:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 149, in gets360RelateDict
+    result=getRemoteClientHeader_2(url,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 18, in getRemoteClientHeader_2
+    result= s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+Exception in thread Thread-22:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 192, in getSogouRelateDict
+    result=getRemoteClientHeader(url,headers)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+
+[I 161113 02:26:13 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=7&pn=1 (180.153.214.191) 14.43ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.206) 54.14ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/jquery.min.js (180.153.214.191) 56.52ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.206) 1.52ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/bootstrap.min.js (180.153.214.191) 0.95ms
+[I 161113 02:26:13 web:1811] 304 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=8 (111.207.250.16) 2.29ms
+[I 161113 02:26:13 web:1811] 304 GET /queryQita?q=+%E6%98%8E+&xgss=true&pn=1&url_type=queryQita&q_type=3 (111.207.250.16) 3.48ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/query.js (101.226.33.206) 0.81ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/query.js (180.153.214.191) 0.79ms
+[I 161113 02:26:13 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.206) 54.11ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery-ui.min.js (180.153.214.191) 123.01ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.206) 0.80ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.206) 0.78ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.json.min.js (180.153.214.191) 0.79ms
+[I 161113 02:26:14 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=2 (101.226.33.206) 2.42ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.cookie.js (180.153.214.191) 0.80ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.206) 1.18ms
+[I 161113 02:26:14 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=7 (180.153.214.191) 2.41ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery.min.js (180.153.214.191) 83.65ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.206) 1.43ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/bootstrap.min.js (180.153.214.191) 1.39ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.206) 53.95ms
+[I 161113 02:26:14 web:1811] 200 GET /static/js/jquery-ui.min.js (180.153.214.191) 104.53ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.206) 0.77ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.206) 0.80ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/jquery.json.min.js (180.153.214.191) 0.78ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/header.js (101.226.33.206) 0.76ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/jquery.cookie.js (180.153.214.191) 0.77ms
+[I 161113 02:26:15 web:1811] 200 GET /static/js/header.js (180.153.214.191) 0.75ms
+[I 161113 02:26:16 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=4&pn=1 (111.207.250.16) 8.07ms
+[I 161113 02:26:16 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=4 (111.207.250.16) 2.41ms
+[I 161113 02:26:17 web:1811] 200 GET /recommend?q=+%E6%98%8E+&baidu=true&pn=1&url_type=recommend (111.207.250.16) 1042.14ms
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/recommend.py", line 188, in so360Recommend
+    result = result.encode('ISO-8859-1').decode('utf-8')
+UnicodeEncodeError: 'latin-1' codec can't encode character u'\u660e' in position 396: ordinal not in range(256)
+
+[I 161113 02:26:21 web:1811] 200 GET /recommend?q=+%E6%98%8E+&s360=true&pn=1&url_type=recommend (111.207.250.16) 3954.61ms
+[I 161113 02:26:23 web:1811] 200 GET /recommend?q=+%E6%98%8E+&sogou=true&pn=1&url_type=recommend (111.207.250.16) 1496.75ms
+[I 161113 02:26:23 web:1811] 200 GET /static/s360.png (111.207.250.16) 1.21ms
+[I 161113 02:26:24 web:1811] 200 GET /static/baidu.png (111.207.250.16) 1.11ms
+[I 161113 02:26:24 web:1811] 200 GET /static/sogou.png (111.207.250.16) 1.11ms
+[I 161113 02:26:25 web:1811] 200 GET /queryAll?q=%E6%98%8E&baidu=true&s360=true&sogou=true&content_type=4&pn=1 (101.226.33.203) 8.74ms
+[I 161113 02:26:25 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.203) 62.15ms
+[I 161113 02:26:25 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.203) 1.49ms
+[I 161113 02:26:26 web:1811] 200 GET /static/js/query.js (101.226.33.203) 0.81ms
+[I 161113 02:26:26 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.203) 98.27ms
+[I 161113 02:26:26 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.203) 0.78ms
+[I 161113 02:26:26 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.203) 0.79ms
+[I 161113 02:26:26 web:1811] 200 GET /queryHeader?q=+%E6%98%8E&pn=1&content_type=4 (101.226.33.203) 2.43ms
+[I 161113 02:26:26 web:1811] 200 GET /static/js/jquery.min.js (101.226.33.203) 88.18ms
+[I 161113 02:26:27 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.33.203) 0.95ms
+[I 161113 02:26:27 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.33.203) 135.33ms
+[I 161113 02:26:27 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.33.203) 0.81ms
+[I 161113 02:26:27 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.33.203) 0.80ms
+[I 161113 02:26:27 web:1811] 200 GET /static/js/header.js (101.226.33.203) 0.76ms
+[W 161113 12:40:07 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (80.82.78.38) 1.35ms
+[I 161113 12:44:32 web:1811] 200 GET / (151.80.28.208) 1.84ms
+[W 161113 14:23:39 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (163.172.134.70) 1.38ms
+[I 161113 16:35:18 web:1811] 200 GET / (151.80.28.208) 1.89ms
+[W 161113 19:07:26 web:1811] 404 GET /manager/html (121.18.231.88) 1.36ms
+[W 161113 19:53:29 web:1811] 404 GET http://www.baidu.com/favicon.ico (123.59.72.185) 0.63ms
+[W 161113 20:17:05 web:1811] 404 HEAD http://wap.ip138.com/ (60.191.52.254) 0.61ms
+[W 161114 06:11:17 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (94.102.49.174) 0.66ms
+[W 161114 10:38:09 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (80.82.78.38) 0.65ms
+[I 161114 18:36:04 web:1811] 200 GET / (159.226.95.66) 1.86ms
+[I 161114 18:36:04 web:1811] 200 GET /static/css/font-awesome.min.css (159.226.95.66) 4.93ms
+[I 161114 18:36:04 web:1811] 200 GET /static/css/bootstrap-switch.min.css (159.226.95.66) 1.29ms
+[I 161114 18:36:04 web:1811] 200 GET /static/css/bootstrap.min.css (159.226.95.66) 12.63ms
+[I 161114 18:36:04 web:1811] 200 GET /static/css/jquery-ui.min.css (159.226.95.66) 5.99ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/jquery.min.js (159.226.95.66) 6.47ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/bootstrap.min.js (159.226.95.66) 3.87ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/bootstrap-switch.min.js (159.226.95.66) 1.44ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/index.js (159.226.95.66) 0.83ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/jquery.json.min.js (159.226.95.66) 0.95ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/jquery.cookie.js (159.226.95.66) 0.89ms
+[I 161114 18:36:04 web:1811] 200 GET /static/js/jquery-ui.min.js (159.226.95.66) 233.65ms
+[I 161114 18:36:04 web:1811] 200 GET /static/cnm4.jpg (159.226.95.66) 1.02ms
+[I 161114 18:36:04 web:1811] 200 GET /static/title1.jpg (159.226.95.66) 0.81ms
+[W 161114 18:36:04 web:1811] 404 GET /favicon.ico (159.226.95.66) 1.61ms
+[I 161114 18:36:10 web:1811] 200 GET /suggest?term=wd (159.226.95.66) 4067.29ms
+[I 161114 18:36:10 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (159.226.95.66) 9.16ms
+[I 161114 18:36:11 web:1811] 200 GET /static/js/query.js (159.226.95.66) 0.82ms
+[I 161114 18:36:11 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=2 (159.226.95.66) 2.39ms
+[I 161114 18:36:11 web:1811] 200 GET /static/js/header.js (159.226.95.66) 0.79ms
+[I 161114 18:36:11 web:1811] 200 GET /static/title.jpg (159.226.95.66) 1.01ms
+[I 161114 18:36:13 web:1811] 200 GET / (117.185.27.114) 1.40ms
+[I 161114 18:36:13 web:1811] 200 GET /static/js/jquery.min.js (117.185.27.114) 55.47ms
+[I 161114 18:36:13 web:1811] 200 GET /static/js/jquery-ui.min.js (117.185.27.114) 55.84ms
+[I 161114 18:36:14 web:1811] 200 GET /static/js/bootstrap.min.js (117.185.27.114) 26.15ms
+[I 161114 18:36:14 web:1811] 200 GET /static/js/bootstrap-switch.min.js (117.185.27.114) 1.09ms
+[I 161114 18:36:14 web:1811] 200 GET /static/js/index.js (117.185.27.114) 0.80ms
+[I 161114 18:36:14 web:1811] 200 GET /static/js/jquery.json.min.js (117.185.27.114) 0.84ms
+[I 161114 18:36:14 web:1811] 200 GET /static/js/jquery.cookie.js (117.185.27.114) 0.80ms
+Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 149, in gets360RelateDict
+    result=getRemoteClientHeader_2(url,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 18, in getRemoteClientHeader_2
+    result= s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 35, in getBaiduRelateDict
+    mingtemp=getRemoteClientHeader(baiduUrl,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-33:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 192, in getSogouRelateDict
+    result=getRemoteClientHeader(url,headers)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+[I 161114 18:36:14 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&content_type=7&pn=1 (159.226.95.66) 17.82ms
+[I 161114 18:36:15 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=7 (159.226.95.66) 2.43ms
+[I 161114 18:36:15 web:1811] 200 GET /queryQita?q=+wd+&xgss=true&pn=1&url_type=queryQita&q_type=2 (159.226.95.66) 3.26ms
+[I 161114 18:36:21 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&content_type=6&pn=1 (159.226.95.66) 4468.40ms
+create log table log2016_11_12
+error,bad content_type argument
+ming
+error,bad content_type argument
+Get Bing cvid error
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:25:58','111.207.250.16','网页','明','{}','{}','{}')
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:02','111.207.250.16','相关搜索','明','{}','{}','{}')
+明
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:13','111.207.250.16','为您推荐','明','{}','{}','{\"明姓\": \"baidu\", \"明 酒徒\": \"baidu\", \"明 小说\": \"baidu\"}')
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:13','101.226.33.206','网页','明','{}','{}','{\"明姓\": \"baidu\", \"明 酒徒\": \"baidu\", \"明 小说\": \"baidu\"}')
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:13','180.153.214.191','相关搜索','明','{}','{}','{\"明姓\": \"baidu\", \"明 酒徒\": \"baidu\", \"明 小说\": \"baidu\"}')
+明
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:16','111.207.250.16','右侧推荐','明','{}','{}','{\"明姓\": \"baidu\", \"明 酒徒\": \"baidu\", \"明 小说\": \"baidu\"}')
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_13 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-13 02:26:25','101.226.33.203','右侧推荐','明','{}','{}','{\"明姓\": \"baidu\", \"明 酒徒\": \"baidu\", \"明 小说\": \"baidu\"}')
+errors:  INSERT INTO log2016_11_14 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-14 18:36:10','159.226.95.66','网页','wd','{}','{}','{}')
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_14 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-14 18:36:14','159.226.95.66','相关搜索','wd','{}','{}','{}')
+wd
+error,bad content_type argument
+errors:  INSERT INTO log2016_11_14 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-14 18:36:21','159.226.95.66','联想词','wd','{\"wdyl\": \"chinaSo\", \"我的世界盒子\": \"baidu;sogou;so360\", \"wdyx\": \"chinaSo\", \"我的世界天骐\": \"sogou\", \"我的新衣\": \"baidu;sogou\", \"问道\": \"sogou;so360;bing\", \"微店\": \"sogou;so360\", \"wdjy\": \"chinaSo\", \"网贷之家\": \"baidu\", \"问道官网\": \"sogou\", \"我的世界籽岷\": \"so360;bing\", \"wdsydc\": \"chinaSo\", \"优酷\": \"baidu\", \"豌豆荚\": \"baidu;sogou;bing\", \"wdgj\": \"chinaSo\", \"王大花的革命生涯\": \"bing\", \"乌冬\": \"chinaSo\", \"wdxx\": \"chinaSo\", \"wdgf\": \"chinaSo\", \"wdcp\": \"baidu\", \"优速\": \"baidu\", \"我的世界马桶解说\": \"so360\", \"我的电脑\": \"bing\", \"我的世界电脑版\": \"so360\", \"我的世界\": \"baidu;sogou;so360;bing\", \"我的世界下载\": \"so360;bing\", \"五毒\": \"chinaSo\", \"武动乾坤\": \"baidu;sogou\", \"wds\": \"baidu;so360\", \"我的媳妇是女王\": \"bing\", \"我的世界小本\": \"sogou;so360\", \"wdrj\": \"chinaSo\"}','{}','{}')
+errors:  INSERT INTO log2016_11_14 (time,ip,type,keyword,suggestion,relate_search,hint_top) VALUES ('2016-11-14 18:36:21','101.226.125.105','网页','wd','{\"wdyl\": \"chinaSo\", \"我的世界盒子\": \"baidu;sogou;so360\", \"wdyx\": \"chinaSo\", \"我的世界天骐\": \"sogou\", \"我的新衣\": \"baidu;sogou\", \"问道\": \"sogou;so360;bing\", \"微店\": \"sogou;so360\", \"wdjy\": \"chinaSo\", \"网贷之家\": \"baidu\", \"问道官网\": \"sogou\", \"我的世界籽岷\": \"so360;bing\", \"wdsydc\": \"chinaSo\", \"优酷\": \"baidu\", \"豌豆荚\": \"baidu;sogou;bing\", \"wdgj\": \"chinaSo\", \"王大花的革命生涯\": \"b[I 161114 18:36:21 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&china_so=false&bing=false&shen_ma=false&filte=false&content_type=2&pn=1 (101.226.125.105) 8.57ms
+[I 161114 18:36:21 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=6 (159.226.95.66) 2.41ms
+[I 161114 18:36:21 web:1811] 200 GET /queryQita?q=+wd+&xgss=true&pn=1&url_type=queryQita&q_type=1 (159.226.95.66) 4.33ms
+[I 161114 18:36:21 web:1811] 200 GET /static/js/jquery.min.js (101.226.125.105) 118.03ms
+[I 161114 18:36:21 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.125.105) 1.47ms
+[I 161114 18:36:21 web:1811] 200 GET /static/js/query.js (101.226.125.105) 0.79ms
+[I 161114 18:36:22 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.125.105) 207.92ms
+[I 161114 18:36:22 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.125.105) 0.77ms
+[I 161114 18:36:22 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.125.105) 0.79ms
+[I 161114 18:36:22 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=2 (101.226.125.105) 2.41ms
+[I 161114 18:36:22 web:1811] 200 GET /static/js/jquery.min.js (101.226.125.105) 155.42ms
+[I 161114 18:36:23 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.125.105) 0.96ms
+[I 161114 18:36:23 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.125.105) 209.12ms
+[I 161114 18:36:23 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.125.105) 0.77ms
+[I 161114 18:36:23 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.125.105) 0.79ms
+[I 161114 18:36:23 web:1811] 200 GET /static/js/header.js (101.226.125.105) 0.76ms
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 149, in gets360RelateDict
+    result=getRemoteClientHeader_2(url,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 18, in getRemoteClientHeader_2
+    result= s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-41:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 192, in getSogouRelateDict
+    result=getRemoteClientHeader(url,headers)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/relate_search.py", line 35, in getBaiduRelateDict
+    mingtemp=getRemoteClientHeader(baiduUrl,header)
+  File "/root/SEWeb/webserver/SEMain/hint_top.py", line 14, in getRemoteClientHeader
+    result=s.remoteRequestHeader(url,header)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1316, in single_request
+    return self.parse_response(response)
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 1493, in parse_response
+    return u.close()
+  File "/root/anaconda2/lib/python2.7/xmlrpclib.py", line 800, in close
+    raise Fault(**self._stack[0])
+Fault: <Fault 1: '<type \'exceptions.Exception\'>:method "remoteRequestHeader" is not supported'>
+
+[I 161114 18:36:24 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&content_type=7&pn=1 (101.226.66.187) 18.19ms
+[I 161114 18:36:24 web:1811] 200 GET /static/js/jquery.min.js (101.226.66.187) 74.69ms
+[I 161114 18:36:24 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.66.187) 1.22ms
+[I 161114 18:36:24 web:1811] 200 GET /static/js/query.js (101.226.66.187) 0.80ms
+[I 161114 18:36:25 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.66.187) 101.54ms
+Exception in thread Thread-44:
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/root/anaconda2/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/root/SEWeb/webserver/SEMain/hint_top_search.py", line 61, in so360Recommend
+    result = result.encode('ISO-8859-1').decode('utf-8')
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 402-403: ordinal not in range(256)
+
+[I 161114 18:36:31 web:1811] 200 GET /queryAll?q=wd&baidu=true&s360=true&sogou=true&content_type=8&pn=1 (159.226.95.66) 6372.98ms
+[I 161114 18:36:31 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.66.187) 0.83ms
+[I 161114 18:36:31 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.66.187) 0.80ms
+[I 161114 18:36:31 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=8 (159.226.95.66) 2.43ms
+[I 161114 18:36:31 web:1811] 200 GET /queryQita?q=+wd+&xgss=true&pn=1&url_type=queryQita&q_type=3 (159.226.95.66) 3.49ms
+[I 161114 18:36:31 web:1811] 200 GET /queryHeader?q=+wd&pn=1&content_type=7 (101.226.66.187) 2.44ms
+[I 161114 18:36:31 web:1811] 200 GET /static/js/jquery.min.js (101.226.66.187) 50.68ms
+[I 161114 18:36:32 web:1811] 200 GET /static/js/bootstrap.min.js (101.226.66.187) 1.50ms
+[I 161114 18:36:32 web:1811] 200 GET /static/js/jquery-ui.min.js (101.226.66.187) 51.59ms
+[I 161114 18:36:32 web:1811] 200 GET /static/js/jquery.json.min.js (101.226.66.187) 0.77ms
+[I 161114 18:36:32 web:1811] 200 GET /static/js/jquery.cookie.js (101.226.66.187) 0.77ms
+[I 161114 18:36:32 web:1811] 200 GET /static/js/header.js (101.226.66.187) 0.75ms
+[I 161114 18:36:33 web:1811] 200 GET /queryAll?q=wd%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB&baidu=true (159.226.95.66) 8.12ms
+[I 161114 18:36:34 web:1811] 200 GET /queryHeader?q=+wd%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB&pn=1&content_type=2 (159.226.95.66) 2.40ms
+[I 161114 18:36:43 web:1811] 200 GET /queryAll?q=wd%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB&baidu=true (180.163.2.119) 8.65ms
+[I 161114 18:36:43 web:1811] 200 GET /static/js/jquery.min.js (180.163.2.119) 122.69ms
+[I 161114 18:36:43 web:1811] 200 GET /static/js/bootstrap.min.js (180.163.2.119) 1.48ms
+[I 161114 18:36:43 web:1811] 200 GET /static/js/query.js (180.163.2.119) 0.79ms
+[I 161114 18:36:44 web:1811] 200 GET /static/js/jquery-ui.min.js (180.163.2.119) 119.55ms
+[I 161114 18:36:44 web:1811] 200 GET /static/js/jquery.json.min.js (180.163.2.119) 0.82ms
+[I 161114 18:36:44 web:1811] 200 GET /static/js/jquery.cookie.js (180.163.2.119) 0.81ms
+[I 161114 18:36:44 web:1811] 200 GET /queryHeader?q=+wd%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%AB&pn=1&content_type=2 (180.163.2.119) 2.63ms
+[I 161114 18:36:44 web:1811] 200 GET /static/js/jquery.min.js (180.163.2.119) 67.20ms
+[I 161114 18:36:44 web:1811] 200 GET /static/js/bootstrap.min.js (180.163.2.119) 1.38ms
+[I 161114 18:36:45 web:1811] 200 GET /static/js/jquery-ui.min.js (180.163.2.119) 114.54ms
+[I 161114 18:36:45 web:1811] 200 GET /static/js/jquery.json.min.js (180.163.2.119) 0.78ms
+[I 161114 18:36:45 web:1811] 200 GET /static/js/jquery.cookie.js (180.163.2.119) 0.79ms
+[I 161114 18:36:45 web:1811] 200 GET /static/js/header.js (180.163.2.119) 0.77ms
+[W 161114 19:45:08 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (163.172.169.116) 1.40ms
+[W 161114 23:26:10 web:1811] 404 GET http://www.baidu.com/?rands=_396080022621459752096640 (61.157.96.112) 0.80ms
+[W 161114 23:26:10 web:1811] 404 GET http://www.haosou.com/?rands=_450092650014090254082364 (61.157.96.112) 0.55ms
+[W 161114 23:26:10 web:1811] 404 GET http://www.sogou.com/?rands=_814279036821170163061188 (61.157.96.112) 0.54ms
+[W 161115 00:03:16 web:1811] 404 GET http://www.izhongsai.com/ (123.57.77.31) 0.74ms
+[W 161115 01:01:50 web:1811] 404 GET http://www.baidu.com/cache/global/img/gs.gif (80.82.78.38) 0.69ms
+[I 161115 11:14:35 web:1811] 200 GET / (203.93.12.5) 1.86ms
+[I 161115 11:14:35 web:1811] 200 GET /static/css/font-awesome.min.css (203.93.12.5) 12.12ms
+[I 161115 11:14:35 web:1811] 200 GET /static/css/bootstrap-switch.min.css (203.93.12.5) 1.12ms
+[I 161115 11:14:35 web:1811] 200 GET /static/js/bootstrap.min.js (203.93.12.5) 1.20ms
+[I 161115 11:14:35 web:1811] 200 GET /static/css/bootstrap.min.css (203.93.12.5) 38.59ms
+[I 161115 11:14:35 web:1811] 200 GET /static/css/jquery-ui.min.css (203.93.12.5) 9.79ms
+[I 161115 11:14:35 web:1811] 200 GET /static/js/bootstrap-switch.min.js (203.93.12.5) 0.99ms
+[I 161115 11:14:36 web:1811] 200 GET /static/js/jquery.min.js (203.93.12.5) 65.17ms
+[I 161115 11:14:36 web:1811] 200 GET /static/js/index.js (203.93.12.5) 0.78ms
+[I 161115 11:14:36 web:1811] 200 GET /static/js/jquery.json.min.js (203.93.12.5) 0.76ms
+[I 161115 11:14:36 web:1811] 200 GET /static/js/jquery-ui.min.js (203.93.12.5) 178.94ms
+[I 161115 11:14:36 web:1811] 200 GET /static/js/jquery.cookie.js (203.93.12.5) 0.80ms
+[I 161115 11:14:36 web:1811] 200 GET /static/cnm4.jpg (203.93.12.5) 1.06ms
+[I 161115 11:14:36 web:1811] 200 GET /static/title1.jpg (203.93.12.5) 0.78ms
+[W 161115 11:14:37 web:1811] 404 GET /favicon.ico (203.93.12.5) 1.56ms
+[W 161115 11:20:26 web:1811] 405 POST / (203.93.12.5) 0.75ms
+[W 161115 12:24:28 web:1811] 405 POST / (203.93.12.5) 1.40ms
+[I 161115 14:01:32 web:1811] 304 GET / (10.128.113.101) 1.87ms
+[I 161115 14:01:32 web:1811] 304 GET /static/css/font-awesome.min.css (10.128.113.101) 0.78ms
+[I 161115 14:01:32 web:1811] 304 GET /static/css/bootstrap.min.css (10.128.113.101) 0.96ms
+[I 161115 14:01:33 web:1811] 304 GET /static/css/jquery-ui.min.css (10.128.113.101) 0.72ms
+[I 161115 14:01:33 web:1811] 304 GET /static/css/bootstrap-switch.min.css (10.128.113.101) 0.65ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/jquery.min.js (10.128.113.101) 0.85ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/jquery-ui.min.js (10.128.113.101) 1.24ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/bootstrap.min.js (10.128.113.101) 0.74ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/bootstrap-switch.min.js (10.128.113.101) 0.67ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/index.js (10.128.113.101) 0.63ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/jquery.json.min.js (10.128.113.101) 0.62ms
+[I 161115 14:01:33 web:1811] 304 GET /static/js/jquery.cookie.js (10.128.113.101) 0.65ms
+[I 161115 14:01:33 web:1811] 304 GET /static/cnm4.jpg (10.128.113.101) 0.73ms
+[I 161115 14:01:33 web:1811] 304 GET /static/title1.jpg (10.128.113.101) 0.65ms
+[W 161115 14:01:33 web:1811] 404 GET /favicon.ico (10.128.113.101) 1.55ms

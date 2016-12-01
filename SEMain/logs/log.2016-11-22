@@ -1,0 +1,26 @@
+/root/anaconda2/lib/python2.7/site-packages/torndb.py:240: Warning: Table 'log2016_11_22' already exists
+  return cursor.execute(query, kwparameters or parameters)
+[I 161122 16:54:39 web:1811] 304 GET /queryAll?q=%E5%93%A5%E7%89%B9%E4%BA%BA&sogou=true&content_type=8&pn=1 (203.93.12.6) 717.10ms
+[I 161122 16:54:39 web:1811] 304 GET /queryHeader?q=+%E5%93%A5%E7%89%B9%E4%BA%BA&pn=1&content_type=8 (203.93.12.6) 2.41ms
+[I 161122 16:54:39 web:1811] 304 GET /queryQita?q=+%E5%93%A5%E7%89%B9%E4%BA%BA+&xgss=true&pn=1&url_type=queryQita&q_type=3 (203.93.12.6) 3.38ms
+[I 161122 16:54:55 web:1811] 304 GET /queryAll?q=%E5%93%A5%E7%89%B9%E4%BA%BA&sogou=true&content_type=7&pn=1 (203.93.12.6) 7209.25ms
+[I 161122 16:54:55 web:1811] 304 GET /queryHeader?q=+%E5%93%A5%E7%89%B9%E4%BA%BA&pn=1&content_type=7 (203.93.12.6) 2.38ms
+[I 161122 16:54:55 web:1811] 304 GET /queryQita?q=+%E5%93%A5%E7%89%B9%E4%BA%BA+&xgss=true&pn=1&url_type=queryQita&q_type=2 (203.93.12.6) 4.25ms
+[I 161122 16:55:25 web:1811] 304 GET /queryAll?q=%E5%93%A5%E7%89%B9%E4%BA%BA&sogou=true&content_type=6&pn=1 (203.93.12.6) 14106.43ms
+[I 161122 16:55:25 web:1811] 304 GET /queryHeader?q=+%E5%93%A5%E7%89%B9%E4%BA%BA&pn=1&content_type=6 (203.93.12.6) 2.39ms
+[I 161122 16:55:25 web:1811] 200 GET /queryQita?q=+%E5%93%A5%E7%89%B9%E4%BA%BA+&xgss=true&pn=1&url_type=queryQita&q_type=1 (203.93.12.6) 4.04ms
+[I 161122 16:57:48 autoreload:191] /root/SEWeb/webserver/SEMain/relate_search.py modified; restarting server
+/root/anaconda2/lib/python2.7/site-packages/torndb.py:240: Warning: Table 'log2016_11_22' already exists
+  return cursor.execute(query, kwparameters or parameters)
+[I 161122 16:58:17 web:1811] 304 GET /queryAll?q=%E5%93%A5%E7%89%B9%E4%BA%BA&sogou=true&content_type=7&pn=1 (203.93.12.6) 5756.35ms
+[I 161122 16:58:17 web:1811] 304 GET /queryHeader?q=+%E5%93%A5%E7%89%B9%E4%BA%BA&pn=1&content_type=7 (203.93.12.6) 2.59ms
+[I 161122 16:58:17 web:1811] 200 GET /queryQita?q=+%E5%93%A5%E7%89%B9%E4%BA%BA+&xgss=true&pn=1&url_type=queryQita&q_type=2 (203.93.12.6) 4.60ms
+[I 161122 16:58:31 web:1811] 304 GET /queryAll?q=%E5%93%A5%E7%89%B9%E4%BA%BA&sogou=true&content_type=8&pn=1 (203.93.12.6) 790.81ms
+[I 161122 16:58:31 web:1811] 304 GET /queryHeader?q=+%E5%93%A5%E7%89%B9%E4%BA%BA&pn=1&content_type=8 (203.93.12.6) 2.42ms
+[I 161122 16:58:31 web:1811] 304 GET /queryQita?q=+%E5%93%A5%E7%89%B9%E4%BA%BA+&xgss=true&pn=1&url_type=queryQita&q_type=3 (203.93.12.6) 5.65ms
+[I 161122 16:58:46 web:1811] 304 GET /suggest?term=%E5%93%A5%E7%89%B9%E4%BA%BA (203.93.12.6) 0.52ms
+[I 161122 16:58:47 web:1811] 200 GET /suggest?term=%E5%93%A5%E7%89%B9 (203.93.12.6) 0.46ms
+[I 161122 16:59:11 web:1811] 200 GET /queryAll?q=%E5%93%A5%E7%89%B9&sogou=true&content_type=7&pn=1 (203.93.12.6) 21658.00ms
+[I 161122 16:59:11 web:1811] 200 GET /queryHeader?q=+%E5%93%A5%E7%89%B9&pn=1&content_type=7 (203.93.12.6) 2.57ms
+[I 161122 16:59:11 web:1811] 200 GET /queryQita?q=+%E5%93%A5%E7%89%B9+&xgss=true&pn=1&url_type=queryQita&q_type=2 (203.93.12.6) 4.53ms
+[I 161122 16:59:11 web:1811] 304 GET /static/js/header.js (203.93.12.6) 24.18ms
